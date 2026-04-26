@@ -1,0 +1,104 @@
+/*
+* GTK Colors (#121212 clean base)
+*/
+
+/* === Accent === */
+@define-color accent_color #bfc2ff;
+@define-color accent_fg_color #11144b;
+@define-color accent_bg_color #bfc2ff;
+
+/* === Semantic === */
+@define-color destructive_bg_color #ffb4ab;
+@define-color destructive_fg_color #690005;
+
+@define-color success_bg_color #c5c4dd;
+@define-color success_fg_color #2e2f42;
+
+@define-color warning_bg_color #e8b9d5;
+@define-color warning_fg_color #46263b;
+
+@define-color error_bg_color #ffb4ab;
+@define-color error_fg_color #690005;
+
+/* === Derived === */
+@define-color accent_color_shade mix(@accent_bg_color, black, 0.2);
+@define-color destructive_color mix(@destructive_bg_color, black, 0.2);
+@define-color success_color mix(@success_bg_color, black, 0.2);
+@define-color warning_color mix(@warning_bg_color, black, 0.2);
+@define-color error_color mix(@error_bg_color, black, 0.2);
+
+/* === Surfaces === */
+@define-color window_bg_color #121212;
+@define-color window_fg_color #e4e1e9;
+
+@define-color view_bg_color #121212;
+@define-color view_fg_color #e4e1e9;
+
+@define-color headerbar_bg_color #121212;
+@define-color headerbar_fg_color #e4e1e9;
+
+@define-color headerbar_border_color alpha(#e4e1e9, 0.18);
+
+@define-color sidebar_bg_color #121212;
+@define-color sidebar_fg_color #e4e1e9;
+@define-color sidebar_border_color alpha(#e4e1e9, 0.08);
+@define-color sidebar_backdrop_color #121212;
+
+/* чуть отделяем карточки */
+@define-color card_bg_color #181818;
+@define-color card_fg_color #e4e1e9;
+
+@define-color dialog_bg_color #121212;
+@define-color dialog_fg_color #e4e1e9;
+
+@define-color popover_bg_color #121212;
+@define-color popover_fg_color #e4e1e9;
+
+/* === Misc === */
+@define-color shade_color alpha(#e4e1e9, 0.05);
+@define-color scrollbar_outline_color #121212;
+
+/* === Panel === */
+@define-color panel_bg_color #121212;
+@define-color panel_fg_color #e4e1e9;
+
+/* === Theme aliases === */
+@define-color theme_fg_color @window_fg_color;
+@define-color theme_text_color @view_fg_color;
+@define-color theme_bg_color @window_bg_color;
+@define-color theme_base_color @view_bg_color;
+
+@define-color theme_selected_bg_color #bfc2ff;
+@define-color theme_selected_fg_color #272b60;
+
+/* === States === */
+@define-color insensitive_bg_color alpha(#e4e1e9, 0.04);
+@define-color insensitive_fg_color alpha(#e4e1e9, 0.5);
+@define-color insensitive_base_color @view_bg_color;
+
+/* === Unfocused === */
+@define-color theme_unfocused_fg_color alpha(#e4e1e9, 0.6);
+@define-color theme_unfocused_bg_color #121212;
+@define-color theme_unfocused_base_color #121212;
+@define-color theme_unfocused_selected_bg_color #bfc2ff;
+@define-color theme_unfocused_selected_fg_color #272b60;
+
+/* === Borders === */
+@define-color borders alpha(#e4e1e9, 0.1);
+@define-color unfocused_borders alpha(#e4e1e9, 0.06);
+
+/* === WM === */
+@define-color wm_title #e4e1e9;
+@define-color wm_unfocused_title alpha(#e4e1e9, 0.6);
+@define-color wm_highlight alpha(white, 0.4);
+@define-color wm_borders_edge alpha(white, 0.4);
+
+@define-color wm_bg_a #2a2a2a;
+@define-color wm_bg_b #121212;
+
+@define-color wm_shadow alpha(black, 0.4);
+@define-color wm_border alpha(#e4e1e9, 0.15);
+
+/* === Content === */
+@define-color content_view_bg @view_bg_color;
+@define-color text_view_bg @view_bg_color;

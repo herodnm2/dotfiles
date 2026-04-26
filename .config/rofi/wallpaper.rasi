@@ -1,0 +1,66 @@
+configuration {
+    show-icons: true;
+}
+
+* {
+    background-color: #111111;
+    text-color: #f8f8f2;
+}
+prompt {
+    enabled: false;
+}
+window {
+    location: center;
+    anchor: center;
+    width: 1000;
+    border: 2;
+    border-radius: 25;
+    border-color: #444444;
+    background-color: #111111;
+}
+
+mainbox {
+    spacing: 10;
+    padding: 20;
+}
+
+inputbar {
+    background-color: #111111;
+    text-color: #f8f8f2;
+}
+
+entry {
+    background-color: #111111;
+    text-color: #f8f8f2;
+}
+
+listview {
+    layout: vertical;
+    lines: 1;
+    columns: 6;
+    spacing: 15;
+    scrollbar: false;
+}
+
+element {
+    orientation: vertical;
+    padding: 10;
+    border-radius: 12;
+    background-color: #111111;
+    text-color: #f8f8f2;
+}
+
+element normal.normal {
+    background-color: #111111;
+    text-color: #f8f8f2;
+}
+
+element selected.normal {
+    background-color: #ffffff;
+    text-color: #111111;
+}
+
+element-icon {
+    size: 300;
+    background-color: #111111;
+}

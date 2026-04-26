@@ -1,0 +1,209 @@
+* {
+    font-family: "JetBrains Mono Nerd Font";
+    
+    font-size: 15px;
+}
+
+
+
+
+/* === BASE === */
+
+window#waybar {
+  background: #121212;
+  border: 2px solid #444444;
+  border-radius: 0px;
+  
+}
+
+tooltip {
+    background: #171717;
+    color: #A1BDCE;
+    font-size: 13px;
+    border-radius: 7px;
+    border: 2px solid #101a24;
+}
+
+/* === WORKSPACES === */
+
+#mpris.hidden {
+    opacity: 0;
+}
+
+#workspaces {
+    color: #8FA1B3;
+    border-radius: 9px;
+    padding: 3px 4px;
+}
+
+#workspaces button {
+    color: #ffffff;
+    border-radius: 9px;
+    padding: 4px;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    color: #72D792;
+}
+
+/* === MODULES COLORS === */
+
+#clock {
+    color: #ffffff;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+#network {
+    color: #A1BDCE;
+}
+
+#cpu {
+    color: #6F8FDB;
+}
+
+#memory {
+    color: #8FA1B3;
+}
+
+#pulseaudio:hover {
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 6px;
+}
+
+/* muted состояние */
+#pulseaudio.muted {
+    color: #777777;
+}
+
+#custom-music {
+    padding: 0 8px;
+}
+
+
+#battery {
+    color: #72D792;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #A1BDCE;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff5f5f;
+}
+
+/* === MEDIA === */
+
+#mpris {
+    color: #ffffff;
+    
+}
+
+/* === TRAY / WINDOW === */
+
+#tray,
+#window {
+    color: #ffffff;
+}
+
+/* === CUSTOM === */
+
+#custom-notification {
+    color: #A1BDCE;
+    font-size: 17px;
+}
+
+#custom-power {
+    color: #FFFFFF;
+    background: rgba(22, 19, 32, 0.9);
+}
+
+#custom-mouse {
+    background: #161320;
+}
+
+#custom-eye {
+    color: #A1BDCE;
+}
+
+#custom-eye:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/* === SLIDERS === */
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+    background-color: #72D792;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+    background: #343434;
+    border-radius: 8px;
+}
+
+/* === ICON GROUPS === */
+
+#custom-l_end,
+#custom-r_end,
+#custom-sl_end,
+#custom-sr_end,
+#custom-rl_end,
+#cava,
+#upower {
+    color: #72D792;
+}
+
+/* === SPACERS === */
+
+#custom-spacer,
+#custom-smallspacer {
+    opacity: 0;
+}
+
+/* плавность */
+* {
+    transition: all 0.25s ease;
+}
+
+/* hover эффект */
+#workspaces button:hover,
+#clock:hover,
+#battery:hover,
+#mpris:hover {
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 6px;
+}
+
+/* появление */
+window#waybar {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* батарея low */
+#battery.critical:not(.charging) {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* зарядка */
+#battery.charging {
+    text-shadow: 0 0 6px #72D792;
+}
