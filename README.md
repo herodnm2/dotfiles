@@ -16,10 +16,6 @@ chmod +x install.sh
 
 ## requirements
 
-```
-.config/
-```
-
 * alacritty
 * waybar
 * wofi / rofi
