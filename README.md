@@ -28,6 +28,7 @@ chmod +x install.sh
 * fish
 * fastfetch
 * btop
+* msnap
 * cava
 * mango
 
